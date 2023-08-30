@@ -7,7 +7,7 @@
 | N°  | Item              |        Detalle |
 |:---:|:------------------|---------------:|
 |  1  | Java              |         17.0.5 |
-|  2  | Gradle            |            7.1 |
+|  2  | Gradle            |          7.5.1 |
 |  3  | Navegador         |        Firefox |
 |  4  | Sistema Operativo | Windows 10 Pro |
 |  5  | Rama principal    |         master |
@@ -28,8 +28,8 @@ o descargar el archivo zip del proyecto.
 Git:
 
 ``` shell 
- git clone https://github.com/paezcamilo/MELI.git
- cd serenity-bdd-base-automation
+ git clone https://github.com/paezcamilo/meli-automation-proj.git
+ cd meli-automation-proj
 ```
 O descargar repor en ZIP
 
