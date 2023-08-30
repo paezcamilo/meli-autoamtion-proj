@@ -1,6 +1,6 @@
 package com.meli.software.tasks;
 
-import com.meli.software.interactions.IngresarCredenciales;
+import com.meli.software.interactions.IngresarDatosUsuario;
 import com.meli.software.models.UsuarioGenerico;
 import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
@@ -18,7 +18,7 @@ public class IniciarSesion implements Task {
         @Override
         public <T extends Actor > void performAs (T actor){
         actor.attemptsTo(
-                IngresarCredenciales.conModelo(usuarioGenerico));
+                IngresarDatosUsuario.conModelo(usuarioGenerico));
 
     }
         public static Performable paraUsuario (UsuarioGenerico usuarioGenerico){

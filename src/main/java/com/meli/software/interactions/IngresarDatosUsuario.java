@@ -11,25 +11,25 @@ import net.thucydides.core.annotations.Step;
 import static com.meli.software.userinterfaces.PaginaInicioSesion.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class IngresarCredenciales implements Interaction {
+public class IngresarDatosUsuario implements Interaction {
 
-    private final String fistName;
+    private final String firstName;
     private final String lastName;
     private final String age;
     private final String country;
 
-    public IngresarCredenciales(String firstName, String lastName, String age, String country) {
-        this.fistName = firstName;
+    public IngresarDatosUsuario(String firstName, String lastName, String age, String country) {
+        this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.country = country;
     }
 
     @Override
-    @Step("#actor ingresa las credenciales")
+    @Step("#actor ingresa las información del usuario")
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Enter.theValue(fistName).into(USERNAME_FIELD),
+                Enter.theValue(firstName).into(USERNAME_FIELD),
                 Enter.theValue(lastName).into(PASSWORD_FIELD),
                 Enter.theValue(age).into(AGE_FIELD),
                 Click.on(COUNTRY_SELECT_FIELD),
@@ -39,6 +39,6 @@ public class IngresarCredenciales implements Interaction {
     }
 
     public static Performable conModelo(UsuarioGenerico usuarioGenerico) {
-        return instrumented(IngresarCredenciales.class, usuarioGenerico.getFirstName(), usuarioGenerico.getLastName(), usuarioGenerico.getAge(), usuarioGenerico.getCountry());
+        return instrumented(IngresarDatosUsuario.class, usuarioGenerico.getFirstName(), usuarioGenerico.getLastName(), usuarioGenerico.getAge(), usuarioGenerico.getCountry());
     }
 }
