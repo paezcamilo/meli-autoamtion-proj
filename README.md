@@ -2,7 +2,7 @@
 <h1>MELI</h1>
 </div>
 
-## Informaci¨®n General
+## Información General
 
 | N°  | Item              |        Detalle |
 |:---:|:------------------|---------------:|
