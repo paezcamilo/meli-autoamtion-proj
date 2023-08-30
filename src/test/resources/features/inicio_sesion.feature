@@ -2,8 +2,8 @@
 # date: 20/08/2023
 # language: es
 
-Característica: Creación y validación de usuarios
-  Como usuario quiero poder crear usuarios y validar, si es mayor de edad, menor de edad o ya ha sido creado
+Característica: Creación y validación de usuarios.
+  Como usuario quiero poder crear usuarios y validar, si es mayor de edad, menor de edad o ya ha sido creado.
 
   @CreaciónDeUsuarioMayorDeEdad
   Escenario: Creación de usuario exitoso por ser mayor de edad

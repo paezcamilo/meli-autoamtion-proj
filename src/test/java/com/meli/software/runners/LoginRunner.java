@@ -6,7 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/inicio_sesion.feature",
+        features = {
+                "src/test/resources/features/inicio_sesion.feature",
+                "src/test/resources/features/api_validacion.feature"
+        },
         glue = "com.meli.software.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         plugin = {

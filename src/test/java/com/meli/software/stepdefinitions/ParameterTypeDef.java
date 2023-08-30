@@ -6,6 +6,8 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
+import java.net.URL;
+
 public class ParameterTypeDef {
 
     @ParameterType(".*")
