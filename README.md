@@ -1,8 +1,8 @@
 <div align="left">
-<h1>MElI</h1>
+<h1>MELI</h1>
 </div>
 
-## Información General
+## Informaci贸n General
 
 | N掳  | Item              |        Detalle |
 |:---:|:------------------|---------------:|
@@ -20,9 +20,9 @@
 - Plugin de Cucumber para Java
 - Gherkin Plugin
 
-## Obtener el código
+## Obtener el c贸digo
 
-El c贸digo de la automatizaci贸n est谩 alojado en un repositorio de GitHub, para hacer uso de 茅l puede clonarlo usando Git
+El c脙鲁digo de la automatizaci贸n est谩 alojado en un repositorio de GitHub, para usar este puede, clonarlo usando Git
 o descargar el archivo zip del proyecto.
 
 Git:
@@ -35,15 +35,15 @@ O descargar repor en ZIP
 
 ## Construido con
 
-La automatización fue desarrollada con:
+La automatizaci贸n fue desarrollada con:
 
 - BDD - Estrategia de desarrollo de pruebas
-- Screenplay - Patrón de dise?o de pruebas
+- Screenplay - Patr贸n de dise帽o de pruebas
 - Gradle - Administrador de dependencias del proyecto
 - Selenium Web Driver - Herramienta para interaccionar con navegadores web
 - Cucumber - Software que apoya el BDD
-- Serenity BDD - Librería de código abierto para escribir pruebas de aceptación automatizadas
-- Gherkin - Lenguaje DSL de lectura empresarial (lenguaje espeífico de dominio)
+- Serenity BDD - Librer铆a de c贸digo abierto para escribir pruebas de aceptaci贸n automatizadas
+- Gherkin - Lenguaje DSL de lectura empresarial (lenguaje espec铆fico de dominio)
 
 ## Versionamiento
 
