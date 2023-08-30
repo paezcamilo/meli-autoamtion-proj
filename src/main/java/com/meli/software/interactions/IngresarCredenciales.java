@@ -13,14 +13,14 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class IngresarCredenciales implements Interaction {
 
-    private final String user;
-    private final String password;
+    private final String fistName;
+    private final String lastName;
     private final String age;
     private final String country;
 
-    public IngresarCredenciales(String user, String password, String age, String country) {
-        this.user = user;
-        this.password = password;
+    public IngresarCredenciales(String firstName, String lastName, String age, String country) {
+        this.fistName = firstName;
+        this.lastName = lastName;
         this.age = age;
         this.country = country;
     }
@@ -29,8 +29,8 @@ public class IngresarCredenciales implements Interaction {
     @Step("#actor ingresa las credenciales")
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Enter.theValue(user).into(USERNAME_FIELD),
-                Enter.theValue(password).into(PASSWORD_FIELD),
+                Enter.theValue(fistName).into(USERNAME_FIELD),
+                Enter.theValue(lastName).into(PASSWORD_FIELD),
                 Enter.theValue(age).into(AGE_FIELD),
                 Click.on(COUNTRY_SELECT_FIELD),
                 Click.on(COUNTRY_ITEMSELECTED_FIELD),

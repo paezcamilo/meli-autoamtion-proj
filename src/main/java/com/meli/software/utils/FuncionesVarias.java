@@ -16,14 +16,14 @@ public class FuncionesVarias {
     }
     public String generateRandomNumMinor() {
         Random random = new Random();
-        Integer numMinor = random.nextInt(18 - 3 + 1) + 3;
+        Integer numMinor = random.nextInt(17 - 3 + 1) + 3;
         String numMinorString = numMinor.toString();
         return numMinorString;
     }
 
     public String generateRandomNumMayor() {
         Random random = new Random();
-        Integer numMayor = random.nextInt(80 - 19 + 1) + 19;
+        Integer numMayor = random.nextInt(80 - 18 + 1) + 18;
         String numMayorString = numMayor.toString();
         return numMayorString;
     }
