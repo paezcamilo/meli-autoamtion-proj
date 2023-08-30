@@ -6,8 +6,15 @@ Característica: Validación de servicios REST.
   Como usuario quiero validar que los servicios REST estén respondiendo correctamente.
 
   @ValidarServicioRestPing
-  Escenario: Verificar el código de respuesta retornado
+  Escenario: Verificar el código de respuesta retornado para el servicio PING
     Dado Camilo la URL del servicio rest "http://localhost:8085"
     Cuando Envío un GET request al endpoint "/ping"
     Entonces El código de respuesta debería ser 200
     Y El mensaje de respuesta debe ser "pong"
+
+  @ValidarServicioRestPersons
+  Escenario: Verificar el código de respuesta retornado y los usuarios existentes para el servicio Persons
+    Dado Camilo la URL del servicio rest de persons "http://localhost:8085"
+    Cuando Envío un GET request al endpoint de persons "/bff/persons"
+    Entonces El código de respuesta para persons debería ser 200
+    Y El mensaje de respuesta para persons debe ser "Lionel Andres"
