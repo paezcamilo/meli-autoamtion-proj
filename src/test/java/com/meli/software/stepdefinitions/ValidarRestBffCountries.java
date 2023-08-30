@@ -30,7 +30,7 @@ public class ValidarRestBffCountries {
                 response -> response.statusCode(statusCode)));
     }
 
-    @Entonces("El mensaje de respuesta para countries debe ser {string}")
+    @Entonces("El mensaje de respuesta para countriesgit add . debe ser {string}")
     public void theResponseShouldContain(String expectedContent) {
         theActorInTheSpotlight().should(seeThatResponse("The response content",
                 response -> response.body(Matchers.containsString(expectedContent))));
